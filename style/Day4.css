@@ -1,0 +1,26 @@
+div {
+    background-color: #eee;
+    border: 1px solid;
+}
+.menu {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+.sizePractice {
+    display: inline-block;
+    padding: 50px;
+    margin: 50px;
+}
+#div1 {
+    font-size: 1rem;
+}
+#div2 {
+    font-size: 2em;
+}
+#div3 {
+    font-size: 3rem;;
+}
+#div4 {
+    font-size: 2em;
+}

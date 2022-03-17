@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+h2{
+    color: red;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h3{
+    color: blueviolet;
+    font-family: 'SUIT-Medium';
+}
+
