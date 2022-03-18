@@ -2,6 +2,10 @@
 .item2-2{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    flex: 0.95;
+    height: -webkit-fill-available;
+    border-radius: 9px;
 }
 .updatedNews{
     flex: 0.05;
@@ -22,9 +26,7 @@
     font-size: 20px;
     padding: 5px;
 }
-.roomImg{
-    flex: 0.6;
-}
+
 .content-1{
     flex: 0.5;
     margin: 15px;
@@ -38,6 +40,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 0px;
+    margin-bottom: 10px;
 }
 .content-2-1{
     margin: 5px;
@@ -83,4 +86,16 @@ button{
 }
 .content-1-4 > button {
     background-color: chocolate;
+}
+.roomImg{
+    flex: 0.65;
+    margin: 15px;
+    margin-top: 0px;
+    overflow: hidden;
+    border: 1px solid black;
+    display: flex;
+}
+.roomImg>img{
+    width: 100%;
+    height: 100%;
 }
