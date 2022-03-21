@@ -54,7 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     z-index: 9999;
 }
 .container-3{
