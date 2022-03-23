@@ -43,7 +43,7 @@
     height: 400px;
     text-align: center;
 }
-.diary-content-1, .diary-content-2, .diary-content-3 {
+.diary-content-1, .diary-content-2, .diary-content-3, .diary-content-4 {
     margin: 10px;
     border: 1px solid #e3e3e3;
     margin-top: 30px;
@@ -70,4 +70,7 @@
 .diary-content button:hover {
     color: white;
     background-color: lightseagreen;
+}
+.diary-content-4 {
+    display: none;
 }
