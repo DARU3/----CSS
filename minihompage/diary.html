@@ -64,7 +64,7 @@
                                 <span class="one">2</span>
                                 <span class="one">3</span>
                                 <span class="sat one">4</span>
-                                <span class="sun one">5</span> 
+                                <span class="sun one">5</span>
                                 <span class="one">6</span>
                                 <span class="one">7</span>
                                 <span class="one">8</span>
@@ -129,7 +129,13 @@
                                 <h4>ㅁㅓ리가 ㅇㅏ닌</h4>
                                 <h4>맘으로 ... 우는 ㄴㅐㄱㅏ 좋ㄷㅏ...</h4>
                             </div>
-                            <button><i class="fa-solid fa-lock"></i> 수달의 비밀일기 보기</button>
+                            <button onclick="getTextFile()">
+                                <i class="fa-solid fa-lock"></i> 수달의 비밀일기 보기
+                            </button>
+                            <div class="diary-content-4">
+                                <p>수달의 비밀 일기</p>
+                                <h4 id="secret-content"></h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,6 +156,27 @@
             </div>
         </div>
     </div>
+    <script>
+        function getTextFile() {
+            var input = document.createElement("input");
+            input.type = "file";
+            input.accept = "text/plain";
+            input.onchange = function (event) {
+                processFile(event.target.files[0]);
+            };
+            input.click();
+        }
+
+        function processFile(file) {
+            var reader = new FileReader();
+            reader.readAsText(file, "utf-8");
+
+            reader.onload = function () {
+                document.querySelector("#secret-content").innerText = reader.result;
+                document.querySelector(".diary-content-4").style.display = "block";
+            };
+        }
+    </script>
 </body>
 
 </html>
